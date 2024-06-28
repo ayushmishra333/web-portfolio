@@ -58,11 +58,11 @@ export default function Home() {
             </h3>
             <p className="text-md py-5 leading-8 text-stone-900 dark:text-neutral-300 max-w-xl mx-auto md:text-xl">
               Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              needs. Join me down below and let&apos;s get cracking!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-           <a href="https://linkedin.com/in/ayushmishra333" target="_blank" ><AiFillLinkedin /></a> 
-           <a href="https://github.com/ayushmishra333" target="_blank" ><AiFillGithub /></a> 
+           <a href="https://linkedin.com/in/ayushmishra333" target="_blank" rel="noreferrer"><AiFillLinkedin /></a> 
+           <a href="https://github.com/ayushmishra333" target="_blank" rel="noreferrer"><AiFillGithub /></a> 
             </div>
             <div className="mx-auto bg-gradient-to-b from-stone-50 dark:from-slate-900 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={ayush} layout="fill" objectFit="contain" />
@@ -136,7 +136,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 text-center dark:text-neutral-300 ">Portfolio</h3>
             <p className="text-md py-2 text-justify leading-8 text-gray-800 dark:text-neutral-300">
               Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
+              developer, I&apos;ve done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to create digital products

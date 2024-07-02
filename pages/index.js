@@ -208,7 +208,7 @@ export default function Home() {
         </section>
         <section className="footer text-center py-15 text-stone-900 dark:text-gray-200">
           <p class="py-5">Also, have a look at my game dev portfolio!</p>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"><a href="https://ayushmishra333.github.io" target="_blank">Portfolio</a></button>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"><a href="https://ayushmishra333.github.io" target="_blank" rel="noreferrer">Portfolio</a></button>
         </section>
         <section className="footer text-center py-10 text-stone-900 dark:text-gray-200">
           <p>Designed and Developed by ayush-mishra3 @ 2024</p>

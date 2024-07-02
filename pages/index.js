@@ -16,6 +16,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import web7 from "../public/web7.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -204,6 +205,10 @@ export default function Home() {
               />
             </div> */}
           </div>
+        </section>
+        <section className="footer text-center py-15 text-stone-900 dark:text-gray-200">
+          <p class="py-5">Also, have a look at my game dev portfolio!</p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"><a href="https://ayushmishra333.github.io" target="_blank">Portfolio</a></button>
         </section>
         <section className="footer text-center py-10 text-stone-900 dark:text-gray-200">
           <p>Designed and Developed by ayush-mishra3 @ 2024</p>

@@ -57,8 +57,7 @@ export default function Home() {
               Developer and designer.
             </h3>
             <p className="text-md py-5 leading-8 text-stone-900 dark:text-neutral-300 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let&apos;s get cracking!
+             Creating seamless digital experiences with a blend of creativity and technical expertise.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
            <a href="https://linkedin.com/in/ayushmishra333" target="_blank" rel="noreferrer"><AiFillLinkedin /></a> 
@@ -135,16 +134,8 @@ export default function Home() {
           <div> 
             <h3 className="text-3xl py-1 text-center dark:text-neutral-300 ">Portfolio</h3>
             <p className="text-md py-2 text-justify leading-8 text-gray-800 dark:text-neutral-300">
-              Since the beginning of my journey as a freelance designer and
-              developer, I&apos;ve done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              Discover my projects, where I combine design and development to build intuitive and high-performance web applications. 
+              Each project showcases my skills, dedication, and passion for delivering exceptional digital solutions.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">

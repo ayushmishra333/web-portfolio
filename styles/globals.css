@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -21,4 +21,100 @@ a {
 @font-face {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
+} */
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-luckiest-guy {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.graffiti-font {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.graffiti-text {
+  font-family: 'Permanent Marker', cursive; /* Ensuring the graffiti font is applied */
+  background: linear-gradient(90deg, #ff00ff, #ff4500, #00ff00, #1e90ff, #ff69b4, #ffd700);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 6s ease infinite;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem; /* Adjust this margin to your liking */
+}
+
+.image-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px; /* Max width for larger screens */
+  height: auto;
+  aspect-ratio: 1 / 1; /* Ensures the element remains a square */
+}
+
+.image-container img {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+
+

@@ -76,7 +76,7 @@ export default function Home() {
         </section>
 
         <section className="footer text-center py-15 text-stone-900 dark:text-gray-200">
-          <p className="py-5">When I&aposm not saving the world, I dabble in game dev. Peek at my side quests!</p>
+          <p className="py-5">When I&apos;m not saving the world, I dabble in game dev. Peek at my side quests!</p>
           <div onClick={() => window.open('https://ayushmishra333.github.io', '_blank')}>
             <GameController />
           </div>

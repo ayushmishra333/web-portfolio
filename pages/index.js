@@ -1,12 +1,10 @@
-import Head from "next/head";
-import {
-  AiFillLinkedin,
-  AiFillGithub
-} from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
+import Head from "next/head";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import ayush from "../public/Ayushanimated.png";
 import Image from "next/image";
+import GameController from "../components/GameController";
 import Carousel from "../components/Carousel";
 
 export default function Home() {
@@ -56,7 +54,7 @@ export default function Home() {
             </div>
             <div className="relative py-10 centered-container">
               <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="graffiti-text text-7xl md:text-7xl lg:text-9xl font-bold opacity-50 text-center graffiti-font">
+                <h1 className="graffiti-text text-8xl md:text-9xl lg:text-9xl font-bold opacity-50 text-center graffiti-font leading-none">
                   SICKER THAN YOUR <u>AVERAGE</u>
                 </h1>
               </div>
@@ -65,9 +63,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-
-        <section className="py-2">
+          <section className="py-2">
           <div>
             <h3 className="text-4xl py-1 text-center dark:text-neutral-300 font-luckiest-guy">Portfolio</h3>
             <p className="text-md py-2 text-center leading-8 text-gray-800 dark:text-neutral-300">
@@ -80,16 +76,22 @@ export default function Home() {
         </section>
 
         <section className="footer text-center py-15 text-stone-900 dark:text-gray-200">
-          <p className="py-5">Also, have a look at my game dev portfolio!</p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-            <a href="https://ayushmishra333.github.io" target="_blank" rel="noreferrer">Portfolio</a>
-          </button>
+          <p className="py-5">When I'm not saving the world, I dabble in game dev. Peek at my side quests!</p>
+          <div onClick={() => window.open('https://ayushmishra333.github.io', '_blank')}>
+            <GameController />
+          </div>
         </section>
 
-        <section className="footer text-center py-10 text-stone-900 dark:text-gray-200">
-          <p>Designed and Developed by ayush-mishra3 @ 2024</p>
+        <section className="footer text-center text-xs py-10 text-stone-900 dark:text-gray-200">
+          <p>Handcrafted by yours truly, Ayush — because, like, who else would do it? © 2024</p>
         </section>
+        </section>
+
+ 
       </main>
     </div>
   );
 }
+
+
+

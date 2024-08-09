@@ -2,8 +2,8 @@ import React from "react";
 
 const GameController = () => {
   return (
-    <div style={{ height: 150, cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <img src="/game-controller.png" alt="Game Controller" style={{ height: '100%', width: 'auto' }} />
+    <div className="game-controller-container">
+      <img src="/game-controller.png" alt="Game Controller" className="game-controller-image animated-controller" />
     </div>
   );
 };

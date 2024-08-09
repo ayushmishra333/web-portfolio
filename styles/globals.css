@@ -30,10 +30,6 @@ a {
 
 .graffiti-font {
   font-family: 'MyCustomFont', cursive;
-}
-
-.graffiti-text {
-  font-family: 'MyCustomFont', cursive; /* Ensuring the graffiti font is applied */
   background: linear-gradient(90deg, #ff00ff, #ff4500, #00ff00, #1e90ff, #ff69b4, #ffd700);
   background-size: 400%;
   -webkit-background-clip: text;
@@ -75,6 +71,224 @@ a {
   object-fit: contain;
 }
 
+/* Neumorphic Styles */
+.neumorphic-icon {
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2), -7px -7px 15px rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  padding: 10px;
+}
 
+.neumorphic-button {
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2), -7px -7px 15px rgba(255, 255, 255, 0.7);
+  background-color: #e0e0e0;
+  border-radius: 12px;
+}
 
+/* Hover effects */
 
+li:hover .text-2xl {
+  transform: rotate(360deg); /* Rotate moon icon on hover */
+  transition: transform 0.5s ease;
+}
+
+/*GameController Animations*/
+
+.game-controller-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust the height as needed */
+  width: auto;   /* Adjust width if necessary */
+}
+
+.game-controller-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* Ensures the image scales while preserving its aspect ratio */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-controller {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (hover: hover) {
+  .game-controller-container:hover {
+    transform: scale(1.1);
+  }
+}
+
+/*Portfolio Carousel*/
+
+/* Carousel and image styling */
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Arrow styling */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.arrow-icon {
+  color: white;
+  font-size: 24px;
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.icon-button {
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background for better visibility */
+}
+
+.icon-button:hover .icon {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.figma-icon {
+  background-color: #f24e1e; /* Figma background */
+}
+
+.github-icon {
+  background-color: #333; /* GitHub background */
+}
+
+.info-icon {
+  background-color: #0070f3; /* Info background */
+}
+
+.close-icon {
+  background-color: #e3342f; /* Close button background */
+}
+
+/* Info Popup */
+.info-popup {
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  background-color: #0070f3;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  animation: popup-animation 0.4s ease-in;
+  display: inline-block;
+  max-width: 50vh;
+  max-height: 50vh; /* Adjust to your preferred max height */
+  }
+
+@keyframes popup-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  20% {
+    opacity: 0.2;
+    transform: translateY(40px);
+  }
+
+  40% {
+    opacity: 0.4;
+    transform: translateY(30px);
+  }
+
+  60% {
+    opacity: 0.6;
+    transform: translateY(20px);
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-content {
+  position: relative;
+}
+
+.popup-header {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase ;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.info-text {
+  color: #ffffff;
+  font-size: 0.75rem;
+  text-align: left;
+  font-weight: normal;
+}

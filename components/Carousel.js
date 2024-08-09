@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { IoMdArrowDropleftCircle, IoMdArrowDroprightCircle } from "react-icons/io";
 import { FaGithub, FaInfoCircle, FaTimesCircle } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import Image from "next/image";
@@ -49,10 +49,10 @@ const Carousel = () => {
   return (
     <div className="carousel-container">
       <div onClick={prevSlide} className="carousel-arrow left-arrow">
-        <AiOutlineLeft className="arrow-icon" />
+        <IoMdArrowDropleftCircle className="arrow-icon" />
       </div>
       <div onClick={nextSlide} className="carousel-arrow right-arrow">
-        <AiOutlineRight className="arrow-icon" />
+        <IoMdArrowDroprightCircle className="arrow-icon" />
       </div>
       <div className="carousel-slides" style={{ transform: `translateX(-${current * 100}%)` }}>
         {images.map((image, index) => (

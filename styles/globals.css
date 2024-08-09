@@ -35,6 +35,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient-animation 6s ease infinite;
+  transform: rotateX(-30deg) rotateY(15deg);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -73,14 +74,14 @@ a {
 
 /* Neumorphic Styles */
 .neumorphic-icon {
-  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2), -7px -7px 15px rgba(255, 255, 255, 0.7);
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5), -7px -7px 15px rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   background-color: #e0e0e0;
   padding: 10px;
 }
 
 .neumorphic-button {
-  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2), -7px -7px 15px rgba(255, 255, 255, 0.7);
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5), -7px -7px 15px rgba(255, 255, 255, 0.5);
   background-color: #e0e0e0;
   border-radius: 12px;
 }
@@ -160,11 +161,9 @@ li:hover .text-2xl {
 /* Arrow styling */
 .carousel-arrow {
   position: absolute;
-  bottom: 10px; /* Position at the bottom */
+  bottom: 5px; /* Position at the bottom */
   z-index: 100;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+  margin: 5px;
   cursor: pointer;
 }
 
@@ -173,12 +172,12 @@ li:hover .text-2xl {
 }
 
 .right-arrow {
-  left: 45px; /* Position to the right of the left-arrow */
+  left: 40px; /* Position to the right of the left-arrow */
 }
 
 .arrow-icon {
-  color: white;
-  font-size: 10px;
+  color: rgb(103, 102, 102);
+  font-size: 25px;
 }
 
 /* Button group styling */
@@ -229,7 +228,7 @@ li:hover .text-2xl {
 /* Info Popup */
 .info-popup {
   position: absolute;
-  bottom: 70px;
+  bottom: 60px;
   right: 10px;
   margin-left: 10px;
   background-color: #0070f3;
@@ -293,3 +292,4 @@ li:hover .text-2xl {
   text-align: left;
   font-weight: normal;
 }
+

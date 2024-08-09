@@ -32,15 +32,13 @@ export default function Home() {
                 </motion.div>
               </li>
               <li>
-                <motion.a
-                  className="bg-gradient-to-r from-stone-100 to-gray-900 text-white px-4 py-2 border-none rounded-md ml-8 neumorphic-button"
+                <a
+                  className="neumorphic-button bg-neutral-300 text-stone-900 px-4 py-2 font-bold rounded-md ml-8"
                   href="./Ayush Mishra - CV.pdf"
                   download="Ayush Mishra - CV"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
                 >
                   Resume
-                </motion.a>
+                </a>
               </li>
             </ul>
           </nav>
@@ -74,9 +72,9 @@ export default function Home() {
                 <AiFillGithub />
               </motion.a>
             </div>
-            <div className="relative py-10 centered-container">
+            <div className="relative mb-10 centered-container">
               <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="graffiti-text text-8xl md:text-9xl lg:text-9xl font-bold opacity-50 text-center graffiti-font leading-none">
+                <h1 className="graffiti-text text-7xl md:text-9xl lg:text-9xl font-bold opacity-50 text-center graffiti-font leading-none">
                   SICKER THAN YOUR <u>AVERAGE</u>
                 </h1>
               </div>
@@ -85,7 +83,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <section className="py-2">
+          <section className="py-2 mt-10">
             <div>
               <h3 className="text-4xl py-1 text-center dark:text-neutral-300 font-luckiest-guy">Portfolio</h3>
               <p className="text-md py-2 text-center leading-8 text-gray-800 dark:text-neutral-300">

@@ -160,26 +160,25 @@ li:hover .text-2xl {
 /* Arrow styling */
 .carousel-arrow {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+  bottom: 10px; /* Position at the bottom */
   z-index: 100;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .left-arrow {
-  left: 10px;
+  left: 10px; /* Position to the left */
 }
 
 .right-arrow {
-  right: 10px;
+  left: 45px; /* Position to the right of the left-arrow */
 }
 
 .arrow-icon {
   color: white;
-  font-size: 24px;
+  font-size: 10px;
 }
 
 /* Button group styling */
@@ -210,6 +209,7 @@ li:hover .text-2xl {
   color: white;
 }
 
+/* Specific styles for different icons */
 .figma-icon {
   background-color: #f24e1e; /* Figma background */
 }
@@ -229,8 +229,9 @@ li:hover .text-2xl {
 /* Info Popup */
 .info-popup {
   position: absolute;
-  bottom: 70px;
+  bottom: 50px;
   right: 10px;
+  margin-left: 10px;
   background-color: #0070f3;
   padding: 15px;
   border-radius: 30px;
@@ -240,7 +241,7 @@ li:hover .text-2xl {
   display: inline-block;
   max-width: 50vh;
   max-height: 50vh; /* Adjust to your preferred max height */
-  }
+}
 
 @keyframes popup-animation {
   0% {
@@ -281,7 +282,7 @@ li:hover .text-2xl {
 .popup-header {
   font-size: 1rem;
   font-weight: bold;
-  text-transform: uppercase ;
+  text-transform: uppercase;
   margin-bottom: 10px;
   color: #ffffff;
 }

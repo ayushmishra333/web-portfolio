@@ -6,6 +6,7 @@ import Image from "next/image";
 import GameController from "../components/GameController";
 import Carousel from "../components/Carousel";
 import { motion } from 'framer-motion';
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -104,6 +105,7 @@ export default function Home() {
             <p>Handcrafted by yours truly, Ayush — because, like, who else would do it? © 2024</p>
           </section>
         </section>
+        <Analytics />
       </main>
     </div>
   );

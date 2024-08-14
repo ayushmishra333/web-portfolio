@@ -7,6 +7,7 @@ import GameController from "../components/GameController";
 import Carousel from "../components/Carousel";
 import { motion } from 'framer-motion';
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -106,6 +107,7 @@ export default function Home() {
           </section>
         </section>
         <Analytics />
+        <SpeedInsights />
       </main>
     </div>
   );

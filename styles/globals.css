@@ -28,6 +28,12 @@ a {
   font-family: 'Luckiest Guy', cursive;
 }
 
+.font-pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 800;
+  font-style: normal;
+}
+
 .graffiti-font {
   font-family: 'MyCustomFont', cursive;
   background: linear-gradient(90deg, #ff00ff, #ff4500, #00ff00, #1e90ff, #ff69b4, #ffd700);

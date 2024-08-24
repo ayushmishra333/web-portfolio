@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import Image from "next/image";
 import GameController from "../components/GameController";
 import Carousel from "../components/Carousel";
@@ -22,7 +22,7 @@ export default function Home() {
       <main className="bg-slate-50 px-10 dark:bg-slate-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-bold text-2xl font-luckiest-guy">AY.</h1>
+            <h1 className="font-bold text-2xl font-luckiest-guy">AM.</h1>
             <ul className="flex items-center">
               <li>
                 <motion.div
@@ -30,7 +30,11 @@ export default function Home() {
                   onClick={() => setDarkMode(!darkMode)}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+                  {darkMode ? (
+                    <BsFillSunFill className="cursor-pointer text-2xl" />
+                  ) : (
+                    <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+                  )}
                 </motion.div>
               </li>
               <li>
@@ -47,13 +51,13 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-2">
-            <h2 className="text-6xl py-2 text-nike font-extrabold md:text-7xl font-luckiest-guy">
+            <h2 className="text-6xl py-2 text-nike font-extrabold md:text-9xl font-luckiest-guy">
               Hi, I&apos;m Ayush
             </h2>
             <h3 className="text-3xl py-2 dark:text-neutral-300 md:text-4xl font-luckiest-guy">
               Developer and designer.
             </h3>
-            <p className="text-lg py-5 leading-8 text-stone-900 dark:text-neutral-300 max-w-xl mx-auto md:text-2xl font-luckiest-guy">
+            <p className="text-lg py-5 leading-8 text-stone-900 dark:text-neutral-300 max-w-xl mx-auto md:text-2xl font-pacifico-regular">
               I make pretty things work on your screens.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-2 text-gray-600 dark:text-gray-400">
@@ -92,8 +96,8 @@ export default function Home() {
           <section className="py-2 mt-10">
             <div>
               <h3 className="text-4xl py-1 text-center dark:text-neutral-300 font-luckiest-guy">Portfolio</h3>
-              <p className="text-md py-2 text-center leading-8 text-gray-800 dark:text-neutral-300">
-                Check out my awesome projects where design meets development to create seamless digital experiences. Every project is a testament to my dedication and passion.
+              <p className="text-md py-2 text-center leading-8 text-gray-800 dark:text-neutral-300 font-pacifico-regular">
+                Check out my projects where design meets development to create seamless digital experiences. Every project is a testament to my dedication and passion.
               </p>
             </div>
             <div className="py-10">

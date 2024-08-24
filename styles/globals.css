@@ -34,6 +34,16 @@ a {
   font-style: normal;
 }
 
+.font-nabla-regular {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+  }
+
 .graffiti-font {
   font-family: 'MyCustomFont', cursive;
   background: linear-gradient(90deg, #ff00ff, #ff4500, #00ff00, #1e90ff, #ff69b4, #ffd700);

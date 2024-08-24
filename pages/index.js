@@ -18,6 +18,9 @@ export default function Home() {
         <title>Ayush Portfolio</title>
         <meta name="description" content="Ayush portfolio website" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet"/>
       </Head>
       <main className="bg-slate-50 px-10 dark:bg-slate-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
@@ -51,13 +54,15 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-2">
-            <h2 className="text-6xl py-2 text-nike font-extrabold md:text-9xl font-luckiest-guy">
+            <h2 className="text-7xl py-2 text-nike font-extrabold md:text-9xl font-luckiest-guy">
               Hi, I&apos;m Ayush
             </h2>
-            <h3 className="text-3xl py-2 dark:text-neutral-300 md:text-4xl font-luckiest-guy">
-              Developer and designer.
-            </h3>
-            <p className="text-lg py-5 leading-8 text-stone-900 dark:text-neutral-300 max-w-xl mx-auto md:text-2xl font-pacifico-regular">
+            <div className="rounded-2xl bg-black dark:bg-slate-700 px-5 md:px-10 py-3 mx-auto inline-block">
+              <h3 className="lg:text-4xl md:text-4xl font-nabla-regular">
+                DEVELOPER & DESIGNER
+              </h3>
+            </div>
+            <p className="text-lg py-5 leading-6 text-stone-900 dark:text-neutral-300 max-w-xl mx-auto md:text-2xl font-pacifico-regular">
               I make pretty things work on your screens.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-2 text-gray-600 dark:text-gray-400">
@@ -82,7 +87,7 @@ export default function Home() {
             </div>
 
             <div className="relative mb-10 centered-container">
-            <div className="relative z-10 mx-auto image-container">
+              <div className="relative z-10 mx-auto image-container">
                 <Image src="/Ayushanimated.png" layout="fill" objectFit="contain" />
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
@@ -96,7 +101,7 @@ export default function Home() {
           <section className="py-2 mt-10">
             <div>
               <h3 className="text-4xl py-1 text-center dark:text-neutral-300 font-luckiest-guy">Portfolio</h3>
-              <p className="text-md py-2 text-center leading-8 text-gray-800 dark:text-neutral-300 font-pacifico-regular">
+              <p className="text-md py-2 text-center leading-6 text-gray-800 dark:text-neutral-300 font-pacifico-regular">
                 Check out my projects where design meets development to create seamless digital experiences. Every project is a testament to my dedication and passion.
               </p>
             </div>

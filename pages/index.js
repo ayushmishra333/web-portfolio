@@ -58,8 +58,10 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet"/>
 
-        <script type="application/ld+json">
-          {{
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Ayush",
@@ -71,8 +73,10 @@ export default function Home() {
             ],
             "image": "/ayushmishra.jpg",
             "description": "Ayush is a front-end web developer with expertise in creating responsive and visually appealing websites."
-          }}
-          </script>
+          }),
+        }}
+
+      />
       </Head>
       <main className="bg-slate-50 px-10 dark:bg-slate-900 md:px-20 lg:px-40">
         <section className="min-h-screen">

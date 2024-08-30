@@ -34,12 +34,45 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>Ayush Portfolio</title>
-        <meta name="description" content="Ayush portfolio website" />
+        <title>Ayush | Front-end Web Developer | Portfolio & Projects</title>
+        <meta name="description" content="Welcome to Ayush's portfolio website. Explore my skills, projects, and experiences as a front-end web developer specializing in creating visually stunning and responsive websites." />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta property="og:title" content="Ayush | Front-end Web Developer" />
+        <meta property="og:description" content="Explore Ayush's portfolio showcasing skills and projects as a front-end web developer." />
+        <meta property="og:image" content="/webphoto.png" />
+        <meta property="og:url" content="https://ayushmishra.co.uk" />
+        <meta property="og:type" content="website" />
+
+        <meta name="robots" content="index, follow" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ayush | Front-end Web Developer" />
+        <meta name="twitter:description" content="Explore Ayush's portfolio showcasing skills and projects as a front-end web developer." />
+        <meta name="twitter:image" content="/webphoto.jpg" />
+
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://ayushmishra.co.uk" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet"/>
+
+        <script type="application/ld+json">
+          {{
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Ayush",
+            "jobTitle": "Front-end Web Developer",
+            "url": "https://ayushmishra.co.uk",
+            "sameAs": [
+              "https://linkedin.com/in/ayushmishra333",
+              "https://github.com/ayushmishra333",
+            ],
+            "image": "/ayushmishra.jpg",
+            "description": "Ayush is a front-end web developer with expertise in creating responsive and visually appealing websites."
+          }}
+          </script>
       </Head>
       <main className="bg-slate-50 px-10 dark:bg-slate-900 md:px-20 lg:px-40">
         <section className="min-h-screen">

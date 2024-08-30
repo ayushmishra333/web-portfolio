@@ -156,7 +156,7 @@ export default function Home() {
           <section className="py-2 mt-10">
             <div>
               <h3 className="text-4xl py-1 text-center dark:text-neutral-300 font-luckiest-guy">Portfolio</h3>
-              <p className="text-md py-2 text-center leading-6 text-gray-800 dark:text-neutral-300 font-pacifico-regular">
+              <p className="text-md py-2 text-center leading-6 text-gray-800 dark:text-neutral-300">
                 Check out my projects where design meets development to create seamless digital experiences. Every project is a testament to my dedication and passion.
               </p>
             </div>

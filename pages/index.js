@@ -79,8 +79,8 @@ export default function Home() {
       />
       </Head>
       <main className="bg-slate-50 px-10 dark:bg-slate-900 md:px-20 lg:px-40">
-        <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
+        <section className="min-h-screen py-5">
+          <nav className="navbar py-4 px-8 mb-12 flex justify-between items-center dark:text-white">
             <h1 className="font-bold text-2xl font-luckiest-guy">AM.</h1>
             <ul className="flex items-center">
               <li>

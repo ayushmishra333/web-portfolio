@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { FaAngleDoubleUp } from "react-icons/fa";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import Image from "next/image";
 import GameController from "../components/GameController";
@@ -11,6 +12,24 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -96,7 +115,6 @@ export default function Home() {
                 </h1>
               </div>
             </div>
-
           </div>
           <section className="py-2 mt-10">
             <div>
@@ -119,6 +137,15 @@ export default function Home() {
             <p>Handcrafted by yours truly, Ayush — because, like, who else would do it? © 2024</p>
           </section>
         </section>
+        {showScrollTop && (
+          <button
+            className="scroll-to-top"
+            onClick={scrollToTop}
+            aria-label="Scroll to Top"
+          >
+            <FaAngleDoubleUp className="text-4xl" />
+          </button>
+        )}
         <Analytics />
         <SpeedInsights />
       </main>

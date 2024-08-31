@@ -109,12 +109,12 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-2">
-            <h2 className="text-7xl py-2 text-nike font-extrabold md:text-9xl font-luckiest-guy">
+          <div className="text-center p-5">
+            <h2 className="text-7xl md:text-8xl lg:text-9xl py-2 text-nike font-extrabold font-luckiest-guy">
               Hi, I&apos;m Ayush
             </h2>
-            <div className="rounded-2xl bg-black dark:bg-slate-700 px-5 md:px-10 py-3 mx-auto inline-block">
-              <h3 className="lg:text-4xl md:text-4xl font-nabla-regular">
+            <div className="px-5 py-3 md:px-10  mx-auto inline-block">
+              <h3 className="text-xl md:text-4xl lg:text-5xl text-stone-900 dark:text-neutral-300 font-luckiest-guy">
                 DEVELOPER & DESIGNER
               </h3>
             </div>

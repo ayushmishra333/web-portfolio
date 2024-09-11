@@ -4,6 +4,8 @@ import { IoMdArrowDropleftCircle, IoMdArrowDroprightCircle } from "react-icons/i
 import { FaGithub, FaInfoCircle, FaTimesCircle } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import Image from "next/image";
+import next1 from "../public/next1.png"
+import rn1 from "../public/rn1.png"
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -15,6 +17,8 @@ import web9 from "../public/web9.png";
 import web10 from "../public/web10.png";
 
 const images = [
+  { src: next1, title: "Clyra Banking", type: "github", link: "https://github.com/ayushmishra333/clyra_banking", description: "A secure and innovative fintech platform for seamless multi-bank account management and real-time financial insights." },
+  { src: rn1, title: "Flixy", type: "github", link: "https://github.com/ayushmishra333/flixy", description: "A dynamic video-sharing app that enables users to share AI-generated videos with smooth animations and robust functionality."},
   { src: web1, title: "Dino Run", type: "figma", link: "https://www.figma.com/design/g3VKDBAmSBvvxLHIOopUmQ/Dino-Run?node-id=0-1&t=Qv92jIOLbGmvnhQB-1", description: "A playful and engaging start screen UI for a dinosaur-themed running game. The design captures the game's lively and fun atmosphere, featuring animated dinosaur, start buttons, and a vibrant color palette that appeals to the target audience." },
   { src: web2, title: "QR Code Generator", type: "github", link: "https://github.com/ayushmishra333/qr-code-generator", description: "A web application that allows users to generate QR codes for any given URL. The app is built using HTML, CSS, and JavaScript, with Tailwind CSS for styling and the qrcodejs library for generating the QR codes." },
   { src: web3, title: "Mouse Tracking", type: "github", link: "https://github.com/ayushmishra333/mouse-tracking", description: "A simple and fun web application where the eyes of a Tom Cat follow the mouse cursor. This project demonstrates basic JavaScript skills in creating interactive and responsive web elements." },
